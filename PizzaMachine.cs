@@ -8,6 +8,8 @@ namespace cardos_dan_vasile2
 {
     class PizzaMachine : Component
     {
+        public delegate void PizzaCompleteDelegate();
+        public event PizzaCompleteDelegate PizzaComplete;
         public delegate void DoughnutCompleteDelegate();
         public event DoughnutCompleteDelegate DoughnutComplete;
         private PizzaType mIngredients;
